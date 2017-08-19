@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <com.lin.heart_master.HeartView.DirectionLineView
+            android:id="@+id/heart_lines"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_aspectRatio="100%"
+            app:layout_widthPercent="40%"/>
+    </android.support.percent.PercentRelativeLayout>
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <com.lin.heart_master.HeartView.CircleView
+            android:id="@+id/heart_circle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_aspectRatio="100%"
+            app:layout_widthPercent="40%"/>
+
+
+    </android.support.percent.PercentRelativeLayout>
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/iv_heart"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:contentDescription="@null"
+            android:src="@drawable/heart"
+            app:layout_aspectRatio="100%"
+            app:layout_widthPercent="20%"/>
+
+    </android.support.percent.PercentRelativeLayout>
+</FrameLayout>
